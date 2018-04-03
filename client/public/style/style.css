@@ -1,0 +1,66 @@
+.champ-img-grid {
+  display: inline-block;
+  margin-bottom: 16px;
+  margin-right: 16px;
+  width: 75px;
+  
+}
+
+.champ-img-grid:hover {
+  transform: scale(1.15);
+}
+
+.form-group {
+  width: 120px;
+  margin-left:auto; 
+  margin-right:auto;
+}
+
+/* starting state of animation */
+.fade-enter {
+  opacity: 0;
+  width: 0px;
+}
+
+/* end state of animation */
+.fade-enter-active {
+  opacity: 1.0;
+  width: 75px;
+  transition: all 1s ease-in;
+}
+
+.fade-leave {
+  opacity: 1.0;
+  width: 75px;
+}
+
+.fade-leave-active {
+  opacity: 0;
+  width: 0px;
+  transition: 1s ease-out all;
+}
+
+
+.documents-list {
+  .documents-list-enter {
+    -webkit-animation-name: bounceIn;
+    -webkit-animation-duration: .8s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: linear;
+    animation-name: bounceIn;
+    animation-duration: .8s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+  }
+
+  .documents-list-leave {
+    -webkit-animation-name: bounceOut;
+    -webkit-animation-duration: 0.5s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: linear;
+    animation-name: bounceOut;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+  }
+}
